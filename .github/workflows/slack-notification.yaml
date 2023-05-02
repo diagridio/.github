@@ -5,7 +5,6 @@ on: workflow_call
 jobs:  
   slack-notify:
     runs-on: ubuntu-latest
-    if: ${{ always() && contains(needs.*.result, 'failure') }}
     steps:
     - uses: craftech-io/slack-action@v1
       with:
