@@ -13,7 +13,7 @@ jobs:
           uses: Gamesight/slack-workflow-status@master
           with:
             repo_token: ${{secrets.GITHUB_TOKEN}}
-            slack_webhook_url: ${{secrets.SLACK_WEBHOOK_URL}}
+            slack_webhook_url: ${{secrets.SLACK_GITHUB_ACTION_WEBHOOK_URL}}
             channel: '#github-notifications'
             name: 'Failed GitHub Workflow'
             icon_url: 'https://avatars0.githubusercontent.com/u/1701160?s=96&v=4'
